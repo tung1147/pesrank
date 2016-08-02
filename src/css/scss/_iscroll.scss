@@ -1,0 +1,12 @@
+.iscroll-on {
+  .iscroll-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .iscroll-scroller {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+  }
+}

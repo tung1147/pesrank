@@ -1,0 +1,20 @@
+<div class="modal-header">
+  <h3 class="modal-title">Mời chơi</h3>
+  <div ng-click="cancel()" class="modal-close"></div>
+</div>
+<div class="modal-body modal-body-alert">
+  Bạn nhận được lời mời chơi từ 
+  <span class="sText-15">&nbsp{{ data.user.username }}</span><br/> 
+  bàn <span class="sText-1">{{data.room.betting}}</span> Vàng
+  <br/>
+  <md-checkbox style="margin-top: 20px; text-transform: uppercase;" 
+  ng-model="disableInvitation" class="md-game" ng-change="onDisableInvitation()" >
+    Từ chối tất cả lời mời chơi
+  </md-checkbox>
+</div> 
+<div class="modal-footer">
+	<div class="text-center">
+		<button class="styl-but styl-agr hid-bor" ng-click="ok()">Đồng ý</button>
+	  <button class="styl-but styl-can hid-bor" ng-click="cancel()">Hủy</button>
+	</div>
+</div>   

@@ -1,0 +1,136 @@
+.game-result{
+    $cardImgPath : $imgPath + 'gamePlay/';
+
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    width: 1280px;
+    height: 720px;
+    bottom: 0;
+
+    .global-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .game-result-popup {
+        margin-top: 60px;
+        width: 750px;
+        min-height: 100px;
+        margin: 0 auto;
+        margin-top: 60px;
+        position: relative;
+        border: 4px solid #76613F;
+        border-radius: 20px;
+        background-color: #9A8053;
+        padding: 1px;
+        .popup-inner {
+            @include linear-gradient(bottom, #291E10, #19120A);
+            border-radius: 20px;
+
+            .popup-header {
+                @include linear-gradient(bottom, #110F0F, #131111 55%, #222020 55%, #292827);
+                border-radius: 20px 20px 0 0;
+
+                .popup-header-inner {
+                    border-radius: 10px 10px 0 0;
+                    font-family: Roboto Condensed;
+                    height: 62px;
+                    line-height: 62px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #7fc100;
+                    font-size: 25px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    position: relative;
+                    position: relative;
+                    z-index: 1;
+                    .close-popup {
+                        width: 59px;
+                        height: 59px;
+                        position: absolute;
+                        right: -30px;
+                        top: -30px;
+                        background: url("#{$imgPath}button/close-popup.png") no-repeat;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .popup-content {
+                padding: 35px 30px;
+                text-align: left;
+                background: url("#{$imgPath}background/bg-popup.png") no-repeat;
+                background-size: cover;
+                height: 472px;
+                .result-item {
+                    vertical-align: top;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 15px;
+                    padding: 10px 10px;
+                    margin-bottom: 10px;
+                    .result-item-info {
+                        font-size: 22px;
+                        font-family: Roboto Condensed;
+                        color: #FFDBDB;
+                        text-align: left;
+                        margin-bottom: 5px;
+                        .result-item-info-left {
+                            display: inline-block;
+                            width: 40%;
+                            overflow-x: hidden;
+                            text-overflow: ellipsis;
+                            vertical-align: top;
+                            white-space: nowrap;
+                        }
+                        .result-item-info-right {
+                            display: inline-block;
+                            width: calc(60% - 6px);
+                            color: #FFC100;
+                            vertical-align: top;
+                            .red-color {
+                                color: red;
+                            }
+                            .user-result-string {
+                                display: inline-block;
+                                float: right;
+                            }
+                        }
+                    }
+                    .result-card-list-container {
+                        position: relative;
+                        .result-item-card-list {
+                            height: 64px;
+                            text-align: center;
+                            .card {
+                                width: 90px;
+                                height: 123px;
+                                display: inline-block;
+                                background-repeat: no-repeat;
+                                position: relative;
+                                zoom : 0.5;
+                                background-image: url("#{$imgPath}gamePlay/canvas/cards.png");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @for $i from 0 through 12{
+        @for $j from 0 through 3{
+            $index : #{$i*4 + $j};
+            $positionX : -#{$i*90};
+            $positionY : -#{$j*144};
+            .card#{$index}{
+                background-position: #{$positionX}px #{$positionY}px;
+            }
+        }
+    }
+
+}
+

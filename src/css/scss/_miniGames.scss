@@ -1,0 +1,154 @@
+.mini-games{
+    width: map-get($appSize,width);
+    margin: 0 auto;
+    height: 0;
+    position: relative;
+}
+.magic-door{
+    $imgPathMagicDoor : $imgPath + "miniGames/magicDoor/";
+    position: absolute;
+    .center{
+        background: url('#{$imgPathMagicDoor}icon-home.png') no-repeat center center;
+        bottom: 0;
+        color: #fff;
+        height: 80px;
+        top: 86px;
+        left: 86px;
+        line-height: 80px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 80px;
+        @include transition(all .4s ease-out);
+        z-index: 99999;
+    }
+    .pulse1 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        top: 86px;
+        left: 86px;
+        right: 0;
+        opacity: 0;
+        border: 3px solid rgba(255,255,255,.1);
+        @include animation(pulsejg1 4s linear infinite);
+        border-radius: 999px;
+        box-shadow: inset 0 0 15px 10px rgba(0,0,0,.6);
+        box-sizing: border-box;
+    }
+    .pulse2 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        top: 86px;
+        left: 86px;
+        right: 0;
+        z-index: 2;
+        opacity: 0;
+        border: 1px solid rgba(255,255,255,0);
+        @include animation(pulsejg2 4s linear infinite);
+        border-radius: 999px;
+        box-shadow: inset 0 0 12px 5px rgba(255,255,255,.8);
+        box-sizing: border-box;
+    }
+    @keyframes pulsejg1{
+        0%{transform:scale(1.2);opacity:0}
+        50%{transform:scale(1.2);opacity:0}
+        60%{transform:scale(1.8);opacity:.1}
+        70%{transform:scale(2.2);opacity:.25}
+        80%{transform:scale(2.5);opacity:.1}
+        100%{transform:scale(2.8);opacity:0}
+    }
+    @keyframes pulsejg2{
+        0%{transform:scale(1.2);opacity:0}
+        40%{transform:scale(1.6);opacity:.05}
+        50%{transform:scale(2);opacity:.1}
+        60%{transform:scale(2.2);opacity:.3}
+        80%{transform:scale(2.4);opacity:.1}
+        100%{transform:scale(2.6);opacity:0}
+    }
+    &.active{
+        .magic-door-core{
+            top: 0;
+            left: 0;
+            height: 256px;
+            width: 256px;
+            opacity: 1;
+            z-index: 99990;
+            @include transform(scale(1) rotate(0));
+        }
+    }
+    .magic-door-core{
+        position: absolute;
+        top: 85px;
+        left: 85px;
+        height: 86px;
+        width: 86px;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 50%;
+        opacity: 0;
+        @include transform(scale(0.1) rotate(-270deg)) ;
+        @include transform-origin(50% 50%);
+        @include transition(all .4s ease-out);
+        .menuItem {
+            color: #eee;
+            display: block;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            margin-left: -20px;
+            margin-top: -20px;
+            position: absolute;
+            text-align: center;
+            background: no-repeat center center;
+            text-indent: -100000px;
+        }
+        .vqmm {
+            background-image: url('#{$imgPathMagicDoor}icon-vongquay-norman.png');
+            width: 47px;
+            height: 47px;
+        }
+        .minipoker {
+            background-image: url('#{$imgPathMagicDoor}icon-minipoker-norman.png');
+            width: 53px;
+            height: 49px;
+        }
+        .taixiu {
+            background-image: url('#{$imgPathMagicDoor}icon-tx-norman.png');
+            width: 50px;
+            height: 48px;
+        }
+        .highlow {
+            background-image: url('#{$imgPathMagicDoor}icon-hilo-normal.png');
+            width: 50px;
+            height: 48px;
+        }
+        .crabfish {
+            background-image: url('#{$imgPathMagicDoor}baucua-quicklink.png');
+            height: 45px;
+            width: 45px;
+        }
+        .ott {
+            background-image: url('#{$imgPathMagicDoor}ott-quicklink.png');
+            width: 47px;
+            height: 47px;
+        }
+        .phucsinh {
+            background-image: url('#{$imgPathMagicDoor}icon-ps-ena.png');
+            width: 52px;
+            height: 52px;
+        }
+        .inbox {
+            background-image: url('#{$imgPathMagicDoor}icon-mail-quicklink.png');
+            width: 46px;
+            height: 49px;
+        }
+        .loto {
+            background-image: url('#{$imgPathMagicDoor}icon-lotto-norman.png');
+            width: 51px;
+            height: 49px;
+        }
+    }
+}

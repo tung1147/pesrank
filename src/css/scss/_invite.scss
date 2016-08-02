@@ -1,0 +1,68 @@
+.user-list-invite {
+  padding: 0px;
+  margin: 0px;
+  display: table;
+  width: 100%;
+  list-style-type: none;
+  list-style: none;
+  >li {
+    width: 50%;
+    float:left;
+
+    @media (max-width: 768px) {
+       width: 100%;
+       display: block;
+    }
+
+    .media {
+      margin: 10px;
+      @include linear-gradient(top, #cbab4f ,#c8a54e 20%,  #9e6f24 60%, #a27225);
+      border-radius: 5px;
+      padding: 10px;
+      border: 2px solid #131212;
+      .media-left {
+
+      }
+
+      .media-body {
+        position:relative;
+        color: #fff;
+        font-weight: bold;
+
+        .text-username,
+        .gold {
+          width: 70%;
+        }
+
+        .text-username {
+          color:#2c1f06;
+        }
+        .gold {
+          margin-top: 10px;
+          background: #493517;
+          border-radius: 5px;
+          text-align: center;
+          padding: 5px;
+          color: #fff;
+        }
+
+        .invite-checkbox{
+          position: absolute;
+          top: 15px;
+          right: 0px;
+          .md-icon {
+            border-radius: 50%;
+            background-color: #fff;
+          }
+          .md-checked {
+            .md-icon {
+              background-color: rgba(63,81,181,0.87);
+            }
+          }
+        }
+
+      }
+      
+    }
+  }
+} 

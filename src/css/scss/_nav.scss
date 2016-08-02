@@ -1,0 +1,91 @@
+.navbar-game {
+  margin-bottom: 0px;
+  height: 91px;
+  .navbar-collapse {
+    padding: 0px;
+  }
+  .level-vip-group {
+    margin-top: 11px;
+  }
+  .navbar-nav>li {
+      float: left;
+  }
+  .navbar-right {
+    float: right!important;
+    margin-right: 30px;
+  }
+  .nav {
+    li {
+      position: relative;
+      a {
+        &:focus,
+        &:hover {
+          background-color: rgba(0, 0, 0, 0);
+        }
+        &:hover {
+          /*font-weight: bold;*/
+        }
+        .icon-menu { 
+          display: block;
+          margin : 0 auto;
+        }
+        color: #C5D81E;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        width: 130px;
+        padding: 5px 0 0;
+        text-align: center;
+      }
+      &:not(:last-child):after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 0;
+        bottom: 0;
+        width: 2px;
+        @include linear-gradient(bottom, transparent, #744738, transparent);
+      }
+      &.first-list {
+        padding-right: 25px;
+      }
+    }
+  }
+  .navbar-profile {
+    $navbar-profile-width: 368px;
+    $navbar-profile-height: 131px;
+    position: relative;
+    width: $navbar-profile-width;
+    .profile-bg {
+      width: $navbar-profile-width;
+      height: $navbar-profile-height;
+      background: url("../img/user/profile-background.png") no-repeat content-box;
+    }
+    .media {
+      text-align: left;
+      position:absolute;
+      top: -59px;
+      .media-left {
+        line-height: $navbar-profile-height;
+        padding-left: 32px;
+        img {
+          display: inline-block;
+          width: 87px;
+          height: 88px;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 50%;
+        }
+      }
+      .media-body {
+        color: #fff; 
+        padding-top: $navbar-profile-height/5;
+        line-height: 42px;
+        font-size: 20px;
+        font-weight: bold;
+        .gold {
+          color: #FFC100
+        }
+      }
+    }
+  }
+}

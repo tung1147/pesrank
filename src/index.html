@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-controller="AppCtrl">
+    <head>
+        <title ng-bind="page.title">Loading....</title>
+        
+        <link rel="shortcut icon" href="css/img/loading-bcoin-item.png" type="image/ico">
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' />
+        <link rel="stylesheet" type="text/css" href="vendor/app.css">
+        <script type="text/javascript" src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+    </head>
+    <body>
+        <div >
+            <div ui-view></div>
+        </div>  
+        <!--dist-->
+        <script type="text/javascript" src="vendor/dist.js"></script>
+        <!--app-->
+        <script type="text/javascript" src="vendor/app.js"></script>
+        <script type="text/javascript" src="vendor/ngConfig.js"></script>
+        <script type="text/javascript" src="vendor/templates.js"></script>
+    </body>
+</html>

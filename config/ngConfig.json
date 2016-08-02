@@ -1,0 +1,55 @@
+{
+  "local": {
+    "env": {
+      "debug": true,
+      "prefix": "botrecon:",
+      "auth": {
+        "prefix": "local"
+      },
+      "facebook": {
+        "clientId": 1133247523363833 
+      },
+      "acs": {
+        "url": "//ip.gamebai389.com/acs", 
+        "version": "1.0.0",
+        "clientId": "de681590-98eb-44ac-ae53-849861b4e997",
+        "platformId": "ddaa7dda-f118-47ac-8e3b-adba19a88445",
+        "secretKey": "choibai389==>open.me().now()"
+      }
+    },
+    "socketConfig": {
+      "servers": [
+        {"host": "103.24.244.160", "port": "8989"}
+      ]
+    }
+  },
+  "production": {
+    "env": {
+      "debug": false,
+      "prefix": "botrecon:",
+      "auth": {
+        "prefix": "production"
+      },
+      "facebook": {
+        "clientId": 1133247523363833
+      },
+      "acs": {
+        "url": "//ip.gamebai389.com/acs", 
+        "version": "1.0.1",
+        "clientId": "de681590-98eb-44ac-ae53-849861b4e997",
+        "platformId": "ddaa7dda-f118-47ac-8e3b-adba19a88445",
+        "secretKey": "choibai389==>open.me().now()"
+      }
+    },
+    "socketConfigOld": {
+      "servers": [
+        {"host": "42.112.25.34", "port": "8989"}
+      ]
+    },
+    "socketConfig": {
+      "servers": [
+        {"host": "www.gamebai389.com/es"}
+      ]
+    }
+  }
+}    

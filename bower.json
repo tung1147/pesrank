@@ -1,0 +1,48 @@
+{
+  "name": "azzapa-web-frontend",
+  "description": "azzapa-web-frontend",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.x",
+    "jquery-ui": "^1.11.4",
+    "angular": "^1.5.x",
+    "angular-route": "^1.5.x",
+    "angular-resource": "^1.5.x",
+		"angular-material": "^1.0.x",
+		"angular-bootstrap": "^1.2.x",
+		"angular-ui-router": "^0.2.x",
+    "angular-recaptcha": "^3.0.1",
+    "bootstrap": "^3.3.x",
+    "ngstorage": "^0.3.x",
+    "oclazyload": "^1.0.x",
+    "ng-file-upload": "^12.0.x",
+    "angular-moment": "^1.0.x",
+    "underscore": "^1.8.3",
+    "PreloadJS": "^0.6.2",
+    "EaselJS": "^0.8.2",
+    "TweenJS": "^0.6.2",
+    "satellizer": "^0.14.x",
+    "eventEmitter": "^5.0.0",
+    "iscroll": "^5.2.0",
+    "angular-websocket": "2.0.0"
+  },
+  
+   "devDependencies": {
+    "angular-mocks": "1.5.x",
+    "angular-scenario": "1.5.x"
+  },
+  
+  "resolutions": {
+    "angular": "1.5.5"
+  }
+}

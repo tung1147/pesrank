@@ -1,0 +1,27 @@
+.img-icon {
+    display: inline-block;
+}
+/**
+ * Icon menu
+ * -------------------------------------------------------------
+ */
+.icon-menu {
+    display: inline-block;
+    width: 89px;
+    height: 53px;
+    background-image: url("#{$iconImgPath}/icon-menu.png");
+    &.icon-ranking { background-position: 0px -106px;}
+    &.icon-inbox { background-position: 0px -53px;}
+    &.icon-cashout { background-position: 0px 0px;}
+    &.icon-charging { background-position: 0px -159px;}
+}
+.icon-rank { 
+    background-image: url("#{$userImgPath}/user-rank.png"); 
+    width: 53px; 
+    height: 53px;
+    display: inline-block;
+    vertical-align: middle;
+    &.top1 { background-position: 0px 0px;}
+    &.top2 { background-position: 0px -53px;}
+    &.top3 { background-position: 0px -106px;}
+}

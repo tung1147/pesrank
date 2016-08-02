@@ -1,0 +1,26 @@
+$imgPath:                 "../img/";
+$bgImgPath : $imgPath + 'background';
+$buttonImgPath : $imgPath + 'button';
+$cardImgPath : $imgPath + 'card';
+$chairImgPath : $imgPath + 'chair';
+$dialImgPath : $imgPath + 'dial';
+$gameListImgPath : $imgPath + 'gameList';
+$giftImgPath : $imgPath + 'gift';
+$iconImgPath : $imgPath + 'icon';
+$loadingImgPath : $imgPath + 'loading';
+$logoImgPath : $imgPath + 'logo';
+$tableImgPath : $imgPath + 'table';
+$userImgPath : $imgPath + 'user';
+$dialImgPath : $imgPath + 'dial';
+$goldImgPath : $imgPath + 'gold';
+$fontPath:                "fonts";
+
+$baseFont: 'Roboto Condensed', sans-serif;
+
+$appSize : (
+    width : 1280px,
+    height: 720px
+);
+
+//layouts
+$container-height: 530px;

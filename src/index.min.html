@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head ng-controller="AppCtrl">
+  <title ng-bind="page.title">Loading....</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=5">
+
+  <script type="text/javascript" src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+</head>
+<body>
+	<div >
+            <div ui-view></div>
+            <cm-loading  resize-page></cm-loading>
+            <mini-popup  resize-page></mini-popup>
+        </div>  
+  <!--libs-->
+  <script type="text/javascript" src="lib/electro.https.js"></script>
+	<script type="text/javascript" src="js/app.min.js?v=5"></script>
+</body>
+</html>

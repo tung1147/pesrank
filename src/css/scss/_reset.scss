@@ -1,0 +1,30 @@
+/*body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  @include user-select(none);
+  background: url("#{$bgImgPath}/bg.jpg") -0px -0px;
+  background-size: cover;
+  font-family: $baseFont;
+}
+// Link
+//---------------------------------------------
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color : inherit;
+} 
+
+[role="button"] {
+ outline:none;
+}
+
+md-checkbox.md-default-theme.md-checked.md-focused .md-container:before, md-checkbox.md-checked.md-focused .md-container:before {
+    background-color: rgba(16, 108, 200, 0.23) !important;
+}
+md-checkbox.md-default-theme.md-checked .md-ink-ripple, md-checkbox.md-checked .md-ink-ripple {
+    color: rgba(16, 108, 200, 0.87) !important;
+}
+*/
